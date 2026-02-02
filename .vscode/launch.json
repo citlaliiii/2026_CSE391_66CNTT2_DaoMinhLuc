@@ -6,11 +6,11 @@
     "configurations": [
 
         {
-            "type": "pwa-chrome",
+            "type": "msedge",
             "request": "launch",
             "name": "Open test1.html",
-            "file": "c:\\shit\\Front-end\\test\\test1.html",
-            "runtimeExecutable": "C:\\Users\\vietd\\AppData\\Local\\Programs\\Opera\\opera.exe"
+            "file": "${file}",
+           
                                 
           
         }
