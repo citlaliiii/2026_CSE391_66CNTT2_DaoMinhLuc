@@ -1,4 +1,4 @@
-# CSE391 - [Tên Môn Học - Ví dụ: Công nghệ phần mềm / Lập trình Web]
+# CSE391 - [Công nghệ phần mềm / Lập trình Web]
 
 Mã nguồn và tài liệu học tập môn học **CSE391** được thực hiện bởi **Đào Minh Lực**.
 
