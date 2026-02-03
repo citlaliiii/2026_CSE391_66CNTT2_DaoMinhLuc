@@ -4,28 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <h4>Basic Info</h4>
+    
 </head> 
 <body>
     <form>
-        <table> 
-            <tr>
-                <label for = "employee_id">Employee_ID</label>
-                <input type ="text" id = "employee_id" ><br>
-            </tr>
-            <tr>
-                <label for = "LastName">Last Name </label>
-                <input type = "text" id = "LastName"><br>
-            </tr>
-            <label for = "FirstName">First Name </label>
-            <select id = "FirstName">
-                <option value="Anie">Anie</option>
-                <option value="John">John</option>
-                <option value="Cina">Cena</option>
-            </select><br>
-            <label for = "Gender">Gender</label>
-            <input type="radio" id="Gender">
+        <table  width = 100%>
+            <h4>Basic Info</h4><hr>
+                <tr>
+                    <td width = 150><b>Employee ID</b></td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td><b>Last Name</b></td>
+                    <td><input type="text" value="Dodsworth" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>First Name</b></td>
+                    <td><input type="text" name="firstName" value="Anne" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Gender</b></td>
+                    <td>
+                        <input type="radio" id = "male" name = "Gender" value="male"><label for="male">Male</label><br>
+                        <input type="radio" id = "female" name = "Gender" value="female"><label for="female">Female</label><br>
+                        <input type="radio" id = "XXX" name = "Gender" value="XXX"><label for="XXX">XXX</label><br>
+                        <input type="radio" id = "ZZZ" name = "Gender" value="ZZZ"><label for="ZZZ">ZZZ</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for = "Title"><b>Title</b></label></td>
+                    <td><input type="text" id = "Title" value="Sales Representative" size="50"></td>
+                </tr>
+                <tr>
+                    <td><label for = "Suffix"><b>Suffix</b></label></td>
+                    <td><input type="text" id = "Suffix" value="Ms." size="50"></td>
+                </tr>
+                <tr>
+                    <td><label for = "Birthdate"><b>BirthDate</b></label></td>
+                    <td>
+                        <input type="datetime" id = "Birthdate" value="1969-07-02 00:00:00" size="50">
+                        <span title="Định dạng ngày: YYYY-MM-DD HH:MM:SS">(?)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for = "Hirehdate"><b>HirehDate</b></label></td>
+                    <td><input type="datetime" id = "Hirehdate" value="1994-11-15 00:00:00" size="50"></td>
+                </tr>
+                <tr>
+                    <td><label for="Ssn"><b>SSN # (if applicable)</b></label></td>
+                    <td><input type = "password" id = "Ssn" placeholder="" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Report to</b></td>
+                    <td>
+                        <select id = "Report to">
+                            <option value="TheRock">TheRock</option>
+                            <option selected value="Buchanan">Buchanan</option>
+                            <option value="JohnWick">JohnWick</option>
+                        </select>
+                    </td>
+                </tr>
         </table>
+        <br>
+        <table width = 100%>
+              <h4>Contact Info</h4><hr>
+                    <tr>
+                        <td width = 150><label for="Email" ><b>Email</b></label></td>
+                        <td><input type="email" placeholder="name@example.com" size="50"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Address"><b>Address</b></label></td>
+                        <td><input type="text" value="7 Houndstooth Rd." size = 50></td>
+                    </tr>
+                    <tr>
+                        <td><label for="City"><b>City</b></label></td>
+                        <td><input type="text" value="London" size = 50></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Region"><b>Region</b></label></td>
+                        <td><input type="text" size = 50></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Postal Code"><b>Postal Code</b></label></td>
+                        <td><input type="text" value="WG2 7LT" size = 50></td>
+                    </tr>
+                    <tr>
+                        <td><b>Country</b></td>
+                        <td>
+                            <select name="Country" id="Country">
+                                <option value="VietNam">VietNam</option>
+                                <option selected value="Russian Federation">Russian Federation</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>US Home Phone</b></td>
+                        <td><input type="tel"size = "50" value="(234) 234 2342"></td>
+                    </tr>
+        </table>
+        <table  width = 100%>
+            <h4><b>Optional Info</b></h4><hr>
+                <tr>
+                    <td width = 150><b>Notes</b></td>
+                    <td><input type="image"></td>
+                </tr>
+                <tr>
+                    <td><b>Prefered Shift</b></td>
+                    <td>
+                        <input type="checkbox" Name="Prefered Shift" id = "Regular">
+                        <label for="Regular">Regular</label> <br>
+                        <input type="checkbox" Name="Prefered Shift" id = "Gravy Yard" checked>
+                        <label for="Gravy Yard">Gravy Yard</label> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Active?</b></td>
+                    <td>
+                        <input type="checkbox" Name="Active" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td td valign="top"><b>Are you human?</b></td>
+                    <td>
+                    <td ><big>TIDAWO</big></td>
+                    <small><td>Click to change</td></small><br>
+                    <td><input type="text" size="50"></td>
+                    </td>
+                </tr>
+        </table>
+        <table width="100%">
+            <tr>
+                <td align="right"><input type="button" value="Submit" id = "Submit",
+                    align="right"><input type="button" value="Cancel" id = "Cancel"></td>
+            </tr>
+        </table><hr>
+        <small>* required</small>
     </form>
 </body>
 </html>
