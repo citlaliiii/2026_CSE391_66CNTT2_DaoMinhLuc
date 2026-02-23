@@ -8,7 +8,7 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open test1.html",
+            "name": "Open .html",
             "file": "${file}",
            
                                 
