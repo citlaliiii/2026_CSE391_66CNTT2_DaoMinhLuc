@@ -1,0 +1,54 @@
+
+
+*{
+    box-sizing:border-box;
+}
+.container {
+
+    max-width:1200px;
+   
+    gap : 20px ;
+    margin:30px ;
+    background-color: azure;
+}
+.row{
+    display:flex;   
+    gap:12px;
+    margin:20px;
+
+}
+.one:one{
+    flex:1
+}
+.oneinarow{
+    margin:12px;
+}
+input,textarea{
+    width:100%;
+    padding:12px;
+}
+#message {
+    width: 100%;
+    height: 200px;   
+    padding: 12px;     
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize:vertical;
+    vertical-align:top; 
+}
+#send-button{
+    -moz-text-decoration-color: #ccc;
+    color:#ffffff;
+    background: #83abe7;
+    border:1px solid;
+    border-radius:4px; ;
+}
+#send-button:hover{
+    color:rgb(254, 254, 254);
+    background:#062ff7;
+   font-weight: 700;
+   padding:8px;
+}
+.between{
+    justify-content:space-between;
+}
