@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div class="stats-bar">
+    Tổng số sinh viên: <span id="total-count"></span> | 
+    Điểm TB lớp: <span id="class-avg"></span>
+</div>
+
+<button id="btn-open-modal" class="btn-add">THÊM SINH VIÊN</button>
+
+<table class="student-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>MÃ SV</th>
+            <th>HỌ VÀ TÊN</th>
+            <th>NGÀY SINH</th>
+            <th>LỚP</th>
+            <th>ĐTB</th>
+            <th>ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+</table>
+
+<div id="student-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title">Thêm Sinh Viên</h2>
+        <form id="student-form">
+            <input type="hidden" id="edit-index"> <div class="form-group">
+                <label>MÃ SINH VIÊN *</label>
+                <input type="text" id="studentId" placeholder="VD: SV123456">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label>HỌ VÀ TÊN *</label>
+                <input type="text" id="fullName">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label>NGÀY SINH *</label>
+                <input type="date" id="dob">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label>LỚP HỌC *</label>
+                <select id="classRoom">
+                    <option value="">Chọn lớp</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label>ĐIỂM TRUNG BÌNH *</label>
+                <input type="number" id="gpa" step="0.01">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label>EMAIL *</label>
+                <input type="email" id="email" placeholder="example@student.edu.vn">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label>MẬT KHẨU *</label>
+                <input type="password" id="password">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label>XÁC NHẬN MẬT KHẨU *</label>
+                <input type="password" id="confirmPassword">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-save">LƯU SINH VIÊN</button>
+                <button type="button" class="btn-cancel" id="btn-close">HỦY</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src = "app.js"></script>
+</body>
+</html>

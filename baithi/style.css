@@ -1,0 +1,87 @@
+body {
+    background-color: #6156d0; 
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.stats-bar {
+    background: linear-gradient(90deg, #f06292, #4db6ac);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-add {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    cursor:pointer;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background: linear-gradient(90deg, #5c6bc0, #9575cd);
+    color: white;
+    padding: 12px;
+}
+
+/* Lớp nền mờ bao phủ toàn màn hình */
+.modal {
+    display: block; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+   
+    background-color: rgba(0, 0, 0, 0.365); /* Màu nền đen mờ */
+}
+
+/* Nội dung của Pop-up */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Cách phía trên 5% và căn giữa */
+    padding: 20px;
+    border-radius: 15px;
+    width: 450px; /* Độ rộng của form */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* Nút đóng (X) */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+}
+#student-form{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.form-group{
+    margin-left: 20px;
+}
